@@ -3,8 +3,7 @@
 
 int main(int argc, char **argv){
   std::system("mv ~/.netrc ~/.netrcBKP");
-  //std::system("eval `ssh-agent -s`");
-  std::system("ssh-agent -s");
+  std::system("eval `ssh-agent -s`");
   std::system("ssh-add ~/.ssh/pluscpp");
   std::system("git add .");
   std::system("git commit -m 'Files'");
@@ -13,4 +12,3 @@ int main(int argc, char **argv){
   std::system("kill -9 $(pidof ssh-agent)");
   return 0;
 }
-
