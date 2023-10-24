@@ -7,3 +7,10 @@ Personal Page
 - [ ] Add text
 - [ ] Add Dear ImGui
 - [ ] Add ...
+
+---
+
+# Deploy
+```bash
+./push.cpp
+```
