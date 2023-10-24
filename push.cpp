@@ -1,8 +1,4 @@
 #!/usr/bin/env bash
-emcmake cmake -B web .
-cd web && make
-emrun index.html
-OK: ssh-keygen -t rsa -b 4096 -n /home/marcos/.ssh/pluscpp
 mv ~/.netrc ~/.netrcBKP
 eval `ssh-agent -s`
 ssh-add ${HOME}/.ssh/pluscpp
